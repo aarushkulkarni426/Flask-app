@@ -1,0 +1,36 @@
+<!-- CSS only -->
+{% extends "layout.html" %}
+<link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+
+{% block content %}
+    <img src="https://cdn.discordapp.com/attachments/857952031012945923/858701165051379752/LITERA_LOGO.png" alt="logo" style="width:1200px; padding-left:290px">
+  <form action="/ask_question" method="POST">
+    <div class="input-group input-group-lg" style="align-items: center;">
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="width:1000px; margin-left: 450px;" name="question">
+       <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
+
+{% endblock %}
+
+{% block info %}
+
+<div class = "container-fluid">
+
+<style>
+
+  p1{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    
+  }
+  </style>
+
+<p1>We created this website becuase people all around the world are getting stressed about the corona and are not focusing on school work. So to help them with their Homework!</p1>
+
+</div>
+
+{% endblock %}
+
